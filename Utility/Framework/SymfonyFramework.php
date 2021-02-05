@@ -20,7 +20,7 @@ final class SymfonyFramework
 {
     public static function getContainerResolvableRootWebPath(): string
     {
-        return sprintf('%%kernel.project_dir%%/%s', self::isKernelLessThan(4) ? 'web' : 'public');
+        return sprintf('%%kernel.project_dir%%/%s', 'web');
     }
 
     public static function isKernelGreaterThanOrEqualTo(int $major, int $minor = null, int $patch = null): bool
